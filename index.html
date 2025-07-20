@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-section">
+            <h1>Weather Forecast</h1>
+            <div class="search-box">
+                <input type="text" id="location-input" placeholder="Search city...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <div id="loading">
+            <div class="spinner"></div>
+            <p>Loading weather data...</p>
+        </div>
+
+        <div id="weather-display" class="hidden">
+            <div class="location-info">
+                <h2 id="city">--</h2>
+                <p id="date">--</p>
+            </div>
+
+            <div class="current-weather">
+                <div class="temp-info">
+                    <span id="temp">--</span>
+                    <span class="unit">°C</span>
+                    <p id="description">--</p>
+                </div>
+                <div id="weather-icon"></div>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail-card">
+                    <i class="fas fa-temperature-low"></i>
+                    <p>Feels Like</p>
+                    <span id="feels-like">--°C</span>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-tint"></i>
+                    <p>Humidity</p>
+                    <span id="humidity">--%</span>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-wind"></i>
+                    <p>Wind</p>
+                    <span id="wind">-- km/h</span>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-sun"></i>
+                    <p>Sunrise</p>
+                    <span id="sunrise">--:--</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="error" class="hidden">
+            <p id="error-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
