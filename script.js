@@ -17,7 +17,7 @@ const windEl = document.getElementById('wind');
 const sunriseEl = document.getElementById('sunrise');
 
 // API Configuration
-const API_KEY = 'ENTER YOUR API KEY FROM CURRENT WEATHER DATA IN OPENWEATHER API'; // Replace with your OpenWeatherMap API key
+const API_KEY = '06480934608dc018cd5d1c9643e1fbdf // Replace with your OpenWeatherMap API key
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 // Event Listeners
